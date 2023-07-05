@@ -4,15 +4,15 @@ function text()
 
 dim a
 
-a=InputBox("¼´½«¿ªÊ¼Ë¢Æµ£¬ÇëÊäÈëÃÜÂë")
+a=InputBox("å³å°†å¼€å§‹åˆ·é¢‘ï¼Œè¯·è¾“å…¥å¯†ç ")
 
 if a="577585"then
 
-Msgbox"¼´½«¿ªÊ¼Ë¢Æµ",0,"ÊäÈë³É¹¦"
+Msgbox"å³å°†å¼€å§‹åˆ·é¢‘",0,"è¾“å…¥æˆåŠŸ"
 
 else
 
-Msgbox"ÃÜÂë´íÎó",0,"ÔÙÀ´Ò»´Î"
+Msgbox"å¯†ç é”™è¯¯",0,"å†æ¥ä¸€æ¬¡"
 
 text()
 
@@ -24,23 +24,23 @@ dim j
 
 do while j<1
 
-Select Case msgbox("È·¶¨Âð£¿",68,"ÇëÖ£ÖØµÄ»Ø´ðÎÒ")
+Select Case msgbox("ç¡®å®šå—ï¼Ÿ",68,"è¯·éƒ‘é‡çš„å›žç­”æˆ‘")
 
 Case 6 j=1
 
-Case 7 msgbox("Äã¿ÉÒÔÍ¨¹ýÈÎÎñ¹ÜÀíÆ÷¹Ø±Õ¡£")
+Case 7 msgbox("ä½ å¯ä»¥é€šè¿‡ä»»åŠ¡ç®¡ç†å™¨å…³é—­ã€‚")
 
 end Select
 
 loop
 
-msgbox("¼´½«¿ªÊ¼¡£")
+msgbox("å³å°†å¼€å§‹ã€‚")
 
 Set WshShell= WScript.CreateObject("WScript.Shell")
 
 WshShell.AppActivate " "
 
-for i=1 to 500
+for i=1 to 1000
 
 WScript.Sleep 500
 
