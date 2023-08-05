@@ -319,7 +319,7 @@ def ondriver_drivercontrol_0():
 def onauton_autonomous_0():
     global auto_tp,fw_spin 
     # step1 飞轮预热
-    auto_tp = 555
+    auto_tp = 570
     auto_flying_wheel_spin.broadcast()
     # step2 双色桶
     time_underpans(0.2)
@@ -327,7 +327,7 @@ def onauton_autonomous_0():
     move(-100,60)
     turn_angle(-13)
     auto_flying_wheel_shoot(2)
-    auto_tp = 512
+    auto_tp = 520
     turn_angle(-135)
     underpans(500)
     move(-100,60)
