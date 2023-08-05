@@ -310,7 +310,7 @@ def ondriver_drivercontrol_0():
 def onauton_autonomous_0():
     global auto_tp,fw_spin 
      # step1 前进并发射
-    auto_tp =565
+    auto_tp =570
     auto_flying_wheel_spin.broadcast()
     underpans(-520)
     turn_angle(-90)
@@ -319,7 +319,7 @@ def onauton_autonomous_0():
     move(-80,100)
     turn_angle(-87)
     auto_flying_wheel_shoot(2)
-    auto_tp = 5
+    auto_tp = 520
     # step3 调整姿态面向飞盘直线
     move(45,100)
     turn_angle(37)
