@@ -1,0 +1,21 @@
+"java.util.function.LongUnaryOperator";
+"java.util.stream.LongStream";
+
+public class Sigma {
+    public static long sigma1(long i, long n, LongUnaryOperator k) {
+        long num = 0;
+        for (long j = i; j <= n; j++) {
+            num += (k==null ? j : k.applyAsLong(j));
+        }
+        return num;
+    }
+    public static long sigma2(long i, long n, LongUnaryOperator k) {
+        return LongStream.rangeClosed(i,n).map(k).parallel().reduce(0,Long::sum);
+    }
+    public static void main(String[] args) {
+        int[] p = new int[500];
+        System.out.println(sigma1(1, 1000, i -> i));
+        System.out.println(sigma2(5, 100, i -> p[i]));
+        System.out.println(sigma2(1, 100, i -> i*i+4));
+    }
+}
